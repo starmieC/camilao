@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
+import { Button } from '../../src/components/screen/button';
 import { Input } from '../../src/components/screen/input';
 import { Container, Content, Title } from './style';
 export const SignIn: React.FunctionComponent = () => {
@@ -7,14 +8,16 @@ export const SignIn: React.FunctionComponent = () => {
         <ScrollView
             keyboardShouldPersistTaps="handled"
             contentContainerStyle={{ flex: 1 }}
-        >
-        <Container>
+    >
+            <Container>
                 <Content>
-                <Title>Login</Title>
-                <Input placeholder="Email"/>
-                <Input placeholder="Senha"/>
+                    <Title>Login</Title>
+                    <Input placeholder="Email"/>
+                    <Input placeholder="Senha"/>
+                    <Button title='Entrar'/>
                 </Content>
-        </Container>
+            </Container>
         </ScrollView>
     );
 };
+
